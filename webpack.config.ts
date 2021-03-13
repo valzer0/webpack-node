@@ -19,6 +19,7 @@ const config: webpack.Configuration = {
     __dirname: false,
     __filename: false
   },
+  mode: process.env.NODE_NEV === 'production' ? 'production' : 'development',
   module: {
     rules: [
       {
